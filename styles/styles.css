@@ -1,0 +1,283 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../images/invite-template.jpg);
+  background-size: cover;
+  text-align: center;
+  font-family: 'Cutive Mono', monospace; }
+
+.wrapper {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 15px 30px;
+  background-color: white;
+  border: 20px double darkgoldenrod;
+  border-radius: 2px;
+  box-shadow: 10px -10px 5px #222; }
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 0; }
+  h1 span {
+    font-family: 'Limelight', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: darkgoldenrod;
+    text-shadow: 1px 1px 0 black; }
+
+header h2 {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+form {
+  margin: 50px 0; }
+  form div {
+    margin: 15px 0; }
+    form div p {
+      margin: 0; }
+  form input[type="text"] {
+    border: none;
+    border-bottom: 1px dotted black; }
+    form input[type="text"]:focus {
+      outline: none;
+      outline: 2px solid darkgoldenrod; }
+
+input[name="bookTitle"] {
+  text-transform: uppercase;
+  text-align: center;
+  width: 80%; }
+
+input[name="authorFirstName"] {
+  text-align: right; }
+
+input[type="submit"] {
+  background-color: white;
+  border: 1px dashed darkgoldenrod;
+  border-radius: 2px;
+  padding: 12px 27px;
+  font-family: 'Limelight', cursive;
+  text-transform: uppercase;
+  color: darkgoldenrod;
+  text-shadow: 1px 1px 0px black;
+  transition: all 0.5s; }
+  input[type="submit"]:hover {
+    background: #132234;
+    border: 3px double darkgoldenrod;
+    padding: 10px 25px; }
+
+.results {
+  max-width: 800px;
+  margin: 0 auto; }
+  .results h4 {
+    font-size: 18px; }
+
+#finalResults h2 {
+  font-family: 'Limelight', cursive;
+  font-size: 40px;
+  color: darkgoldenrod;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px black; }
+
+h3#title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0; }
+
+#credits {
+  margin: 10px 0; }
+  #credits p {
+    margin: 5px 0; }
+
+.flexContainer {
+  display: flex; }
+  .flexContainer .bookResults {
+    width: calc(50% - 10px);
+    margin-right: 10px; }
+    .flexContainer .bookResults img {
+      max-width: 300px;
+      width: 100%;
+      transition: all 1s; }
+  .flexContainer .movieResults {
+    width: calc(50% - 10px);
+    margin-left: 10px; }
+    .flexContainer .movieResults img {
+      max-width: 100%;
+      transition: all 1s; }
+  .flexContainer .winner {
+    transform: scale(1.2); }
+
+#overview {
+  text-align: left; }
+
+footer {
+  margin-top: 50px; }
+  footer p {
+    margin-bottom: 0; }
+  footer a {
+    color: darkgoldenrod;
+    font-weight: bold; }
+    footer a:hover {
+      font-family: 'Limelight', cursive;
+      text-transform: uppercase; }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 20px; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .wrapper {
+    margin: 0 auto;
+    padding: 10px 20px; }
+  h1 {
+    font-size: 50px;
+    margin-top: 20px; }
+    h1 span {
+      font-size: 35px; }
+  header h2 {
+    font-size: 18px; }
+  form {
+    margin: 30px 0; }
+  input[name="authorFirstName"] {
+    text-align: center;
+    margin-bottom: 5px; }
+  input[name="authorLastName"] {
+    text-align: center; }
+  #finalResults h2 {
+    font-size: 30px; } }

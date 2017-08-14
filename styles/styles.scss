@@ -1,0 +1,214 @@
+@import "partials/setup";
+
+body {
+	background-image: url(../images/invite-template.jpg);
+	background-size: cover;
+	text-align: center;
+	font-family: 'Cutive Mono', monospace;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 50px auto;
+	padding: 15px 30px;
+	background-color: white;
+	border: 20px double darkgoldenrod;
+	border-radius: 2px;
+	box-shadow: 10px -10px 5px #222;
+}
+
+h1 {
+	font-size: 60px;
+	margin-bottom: 0;
+	span {
+		font-family: 'Limelight', cursive;
+		text-transform: uppercase;
+		font-size: 40px;
+		color: darkgoldenrod;
+		text-shadow: 1px 1px 0 black;
+	}
+}
+
+header h2 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+form {
+	margin: 50px 0;
+	div {
+		margin: 15px 0;
+		p {
+			margin: 0;
+		}
+	}
+	input[type="text"] {
+		border: none;
+		border-bottom: 1px dotted black;
+		&:focus {
+			outline: none;
+			outline: 2px solid darkgoldenrod;
+		}
+	}
+} 
+
+input[name="bookTitle"] {
+	text-transform: uppercase;
+	text-align: center;
+	width: 80%;
+}
+
+input[name="authorFirstName"] {
+	text-align: right;
+}
+
+input[type="submit"] {
+	background-color: white;
+	border: 1px dashed darkgoldenrod;
+	border-radius: 2px;
+	padding: 12px 27px;
+	font-family: 'Limelight', cursive;
+	text-transform: uppercase;
+	color: darkgoldenrod;
+	text-shadow: 1px 1px 0px black;
+	transition: all 0.5s;
+	&:hover {
+		background: rgba(19, 34, 52, 1);
+		border: 3px double darkgoldenrod;
+		padding: 10px 25px;
+	}
+}
+
+.results {
+	max-width: 800px;
+	margin: 0 auto;
+	h4 {
+		font-size: 18px;
+	}
+}
+
+#finalResults h2 {
+	font-family: 'Limelight', cursive;
+	font-size: 40px;
+	color: darkgoldenrod;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 1px black;
+}
+
+h3#title {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+#credits {
+	margin: 10px 0;
+	p {
+		margin: 5px 0;
+	}
+}
+
+.flexContainer {
+	display: flex;
+	// border: 1px solid red;
+	.bookResults {
+		width: calc(50% - 10px);
+		margin-right: 10px;
+		// border: 1px solid lime;
+		img {
+			max-width: 300px;
+			width: 100%;
+			transition: all 1s;
+		}
+	}
+	.movieResults {
+		width: calc(50% - 10px);
+		margin-left: 10px;
+		// border: 1px solid lime;
+		img {
+			max-width: 100%;
+			transition: all 1s;
+		}
+	}
+	.winner {
+		transform: scale(1.2);
+	}
+}
+
+#overview {
+	text-align: left;
+}
+
+footer {
+	margin-top: 50px;
+	p {
+		margin-bottom: 0;
+	}
+	a {
+		color: darkgoldenrod;
+		font-weight: bold;
+		&:hover {
+			font-family: 'Limelight', cursive;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+
+// RESPONSIVE
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	header h2 {
+		font-size: 20px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.wrapper {
+		margin: 0 auto;
+		padding: 10px 20px;
+	}
+
+	h1 {
+		font-size: 50px;
+		margin-top: 20px;
+		span {
+			font-size: 35px;
+		}
+	}
+
+	header h2 {
+		font-size: 18px;
+	}
+
+	form {
+		margin: 30px 0;
+	}
+
+	input[name="authorFirstName"] {
+		text-align: center;
+		margin-bottom: 5px;
+	}
+
+	input[name="authorLastName"] {
+		text-align: center;
+	}
+
+	#finalResults h2 {
+		font-size: 30px;
+	}
+}
+
+
+
+// font-family: 'Cutive Mono', monospace; -script body
+// font-family: 'Limelight', cursive; -gatsby-esque font

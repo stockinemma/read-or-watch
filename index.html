@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Read Or Watch?</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Limelight" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Read <span>or</span> Watch?</h1>
+			<h2>Is the movie adaptation of this book worth watching? Here's your answer!</h2>
+		</header>
+
+		<form action="">
+			<h3>Enter the book's information:</h3>
+
+			<div class="userChoiceTitle">
+				<label for="bookTitle" hidden aria-hidden="false">Book Title</label>
+				<input type="text" name="bookTitle" id="bookTitle" placeholder="Book title" required>
+			</div>
+
+			<div class="userChoiceAuthor">
+				<p>by</p>
+				<label for="authorFirstName" hidden aria-hidden="false">Author's First Name</label>
+				<input type="text" name="authorFirstName" id="authorFirstName" placeholder="Author's first name" required>
+
+				<label for="authorLastName" hidden aria-hidden="false">Author's Last Name</label>
+				<input type="text" name="authorLastName" id="authorLastName" placeholder="Author's last name" required>
+			</div>
+
+
+			<div class="submitButton">
+				<a href="#results"><input type="submit"></a>
+			</div>
+		</form>
+
+
+		<div class="results">
+			<div id="finalResults">
+			</div>
+			<h3 id="title"></h3>
+			<div id="credits">
+			</div>
+			<div class="flexContainer">
+				<div class="bookResults" id="bookResults">
+				</div>
+				<div class="movieResults" id="movieResults">
+				</div>
+			</div>
+			<p id="overview"></p>
+		</div>
+
+		<footer>
+			<p>© 2017 | Powered by GoodReads API & The Movie Database API</p>
+		</footer>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
